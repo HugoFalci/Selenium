@@ -36,7 +36,7 @@ const chrome = require('selenium-webdriver/chrome');
         await aguardarEclicarNoBotaoProximo(driver);
 
         //Dados de acesso
-        await driver.findElement(By.id('selfservice-celular')).sendKeys('47 9 9755 4585');
+        await driver.findElement(By.id('selfservice-celular')).sendKeys('31 9 7217 1489');
         await driver.findElement(By.id('login-email')).sendKeys('hugo+11@imobia.app');
         let dropdownLoc = await driver.findElement(By.id('input-98'));
         await dropdownLoc.click();
@@ -52,6 +52,7 @@ const chrome = require('selenium-webdriver/chrome');
     }
 })();
 
+/** */
 
 async function clicarNoCheckbox(driver, checkboxId) {
     let checkbox = await driver.findElement(By.id(checkboxId));
